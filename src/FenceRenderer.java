@@ -2,7 +2,7 @@ import processing.core.PApplet;
 
 public class FenceRenderer {
 
-    public static void drawFences(PApplet app)
+    public static void draw(PApplet app)
     {
         app.background(173, 188, 211);
         app.strokeWeight(1);

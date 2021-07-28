@@ -2,7 +2,7 @@ import processing.core.PApplet;
 
 public class SpiralRenderer {
 
-    public static void drawSpirals(PApplet app)
+    public static void draw(PApplet app)
     {
         app.background(241,219,165);
         app.strokeWeight(1);

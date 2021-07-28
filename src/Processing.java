@@ -12,16 +12,19 @@ public class Processing extends PApplet {
     }
 
     public void setup() {
-        RenderingTypes type = RenderingTypes.SpiralRenderer;
+        RenderingTypes type = RenderingTypes.FuzzBallRenderer;
 
         switch (type) {
             case Scratchpad:
                 break;
             case FenceRenderer:
-                FenceRenderer.drawFences(this);
+                FenceRenderer.draw(this);
                 break;
             case SpiralRenderer:
-                SpiralRenderer.drawSpirals(this);
+                SpiralRenderer.draw(this);
+                break;
+            case FuzzBallRenderer:
+                FuzzBallRenderer.draw(this);
                 break;
         }
 
