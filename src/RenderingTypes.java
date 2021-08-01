@@ -2,5 +2,7 @@ public enum RenderingTypes {
     Scratchpad,
     FenceRenderer,
     SpiralRenderer,
-    FuzzBallRenderer
+    FuzzBallRenderer,
+    SkylineRenderer,
+    BoneRenderer
 }

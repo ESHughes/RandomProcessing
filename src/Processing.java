@@ -12,7 +12,7 @@ public class Processing extends PApplet {
     }
 
     public void setup() {
-        RenderingTypes type = RenderingTypes.FuzzBallRenderer;
+        RenderingTypes type = RenderingTypes.BoneRenderer;
 
         switch (type) {
             case Scratchpad:
@@ -25,6 +25,12 @@ public class Processing extends PApplet {
                 break;
             case FuzzBallRenderer:
                 FuzzBallRenderer.draw(this);
+                break;
+            case SkylineRenderer:
+                SkylineRenderer.draw(this);
+                break;
+            case BoneRenderer:
+                BoneRenderer.draw(this);
                 break;
         }
 

@@ -9,7 +9,7 @@ public class FuzzBallRenderer {
 
         int jagginessFactor = (int)app.random(1000, 7000);
 
-        for (int i = 0; i < 80; i++) {
+        for (int i = 0; i < (int)app.random(60, 100); i++) {
             if (i % 2 == 0) {
                 app.fill(60, 20, 100, 75);
             } else {
