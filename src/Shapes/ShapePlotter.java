@@ -5,10 +5,8 @@ import processing.core.PApplet;
 import java.util.*;
 
 public class ShapePlotter {
-    public static List<Point> plotRotatedEllipse(PApplet app, int x0, int y0, int r1, int r2, int theta, float noiseAmount) {
+    public static List<Point> plotRotatedEllipse(PApplet app, int x0, int y0, int r1, int r2, int theta, float noiseAmount, float noiseScale) {
         float x, y;
-        float noiseScale = 0.008f;
-
         List<Point> points = new ArrayList<Point>();
 
         for (int i = 0; i < 360; i++) {
@@ -25,5 +23,16 @@ public class ShapePlotter {
             points.add(new Point((int)x, (int)y));
         }
         return points;
+    }
+
+    public static void rotatePoints(List<Point> points, int theta) {
+
+    }
+
+    public static void translatePoints(List<Point> points, int deltaX, int deltaY) {
+        for (int i = 0; i < points.size(); i++) {
+            points.get(i).x += deltaX;
+            points.get(i).y += deltaY;
+        }
     }
 }
